@@ -15,9 +15,8 @@ Vagrant.configure("2") do |config|
       pupo_config.vm.provision :shell, path: "puppet-master-config.sh"
   end
 
-
   # create some web servers
-  2.times do |i|
+  3.times do |i|
     config.vm.define "web#{i}" do |node|
         node.vm.box = "ubuntu/trusty64"
         node.vm.hostname = "web#{i}"
