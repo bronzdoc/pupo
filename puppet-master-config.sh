@@ -10,7 +10,7 @@ sudo apt-get install -y puppetmaster-passenger
 sudo mkdir -p /etc/puppet/modules/lamp/manifests
 
 # Copy the lamp manifest to the puppet mastes
-sudo cp /vagrant/modules/lamp/manifests/init.pp /etc/puppet/modules/lamp/manifest/
+sudo cp /vagrant/modules/lamp/manifests/init.pp /etc/puppet/modules/lamp/manifests/
 
 # Add our lamp module to the main manifest
 sudo cp /vagrant/manifests/main/site.pp /etc/puppet/manifests/
