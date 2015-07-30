@@ -1,7 +1,7 @@
 class lamp {
   # execute 'apt-get update'
-    exec { 'apt-update':                    # exec resource named 'apt-update'
-    command => '/usr/bin/apt-get update'  # command this resource will run
+  exec { 'apt-update':                    # exec resource named 'apt-update'
+  command => '/usr/bin/apt-get update',  # command this resource will run
   }
 
   # install apache2 package
@@ -11,7 +11,7 @@ class lamp {
   }
 
   # ensure apache2 service is running
-    service { 'apache2':
+  service { 'apache2':
     ensure => running,
   }
 
@@ -38,3 +38,4 @@ class lamp {
     content => '<?php phpinfo(); ?>',
     require => Package['apache2'],
   }
+}
