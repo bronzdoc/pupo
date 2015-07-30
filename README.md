@@ -1,5 +1,5 @@
 ##Pupo
-Just a little lamp environment to experiment with puppet.
+Just a little environment to experiment with puppet.
 
 #Configuration
 <code>vagrant up</code>
