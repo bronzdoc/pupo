@@ -12,6 +12,6 @@ This will generate a coumple of things:
 
 #Notes:
 
-When the web nodes be running make sure to sign the certificate nodes from the
+When the web nodes be running make sure to sign their certificate from the
 puppet master server.
 
